@@ -23,7 +23,7 @@ public class Parcial {
 		
 		for(int i=1;i<e; i++) {
 			resultado = resultado*b;
-			if(resultado >  2147483647) {
+			if(resultado >  2147483647 ||  resultado < -2147483648) {
 				throw new Exception("El resultado será mayor que el número valor máximo permitido para un entero");
 			}
 		}
